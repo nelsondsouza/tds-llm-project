@@ -37,7 +37,7 @@ async def run_task(task: str = Query(...)):
     # Map the task_code to the corresponding internal function.
     try:
         if task_code == "A1":
-            user_email = os.environ.get("USER_EMAIL", "22f3001832@ds.study.iitm.ac.in")
+            user_email = os.environ.get("USER_EMAIL", "22f1001290@ds.study.iitm.ac.in")
             result = handle_task_A1(user_email)
         elif task_code == "A2":
             result = handle_task_A2()
